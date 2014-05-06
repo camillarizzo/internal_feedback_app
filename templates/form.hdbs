@@ -1,0 +1,20 @@
+<div class="container-fluid">
+  <span class="instructions">{{{setting "Instructions"}}}</span>
+  <br><br>
+<form class="form">
+  <label>{{setting "Comment_label"}}</label>
+  <textarea class="feedback"></textarea>
+  <br><br>
+  <label>{{setting "Rating_label"}}</label>
+  <select class="rating">
+    <option> - </option>
+    <option value="good">
+      Good <i class="icon-thumbs-up"></i>
+    </option>
+    <option value="bad">
+      Bad <i class="icon-thumbs-down"></i>
+    </option>
+  </select>
+  <button class="submit_form btn btn-primary pull-right">Submit</button>
+</form>
+</div>
