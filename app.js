@@ -29,12 +29,14 @@
       var rating = this.$('.rating').val();
       var ratingPrefix = this.setting('Rating_tag_prefix');
       var ratingTag;
-
-      if(ratingPrefix) {
-        ratingTag = ratingPrefix + '_' + rating;
-      } else {
-        ratingTag = 'feedback_' + rating;
+      if(rating == 'good' || rating == 'bad') {
+        if(ratingPrefix) {
+          ratingTag = ratingPrefix + '_' + rating;
+        } else {
+          ratingTag = 'feedback_' + rating;
+        }
       }
+        
       var ticketRaw = {'ticket':{'subject':comment,'comment': { 'body': comment }, 'tags':[this.setting('Tag') || 'feedback', ratingTag]}};
       var ticketString = JSON.stringify(ticketRaw);
 
