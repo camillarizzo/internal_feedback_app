@@ -1,3 +1,11 @@
 .feedback {
-  width: 95%;
+  min-height: 200px;
+  max-height: 700px;
+  width: 310px;
+  margin: 0;
+
+}
+div.container-fluid {
+  margin: 0;
+  padding: 0;
 }

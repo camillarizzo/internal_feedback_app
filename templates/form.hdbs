@@ -1,20 +1,36 @@
 <div class="container-fluid">
   <span class="instructions">{{{setting "Instructions"}}}</span>
-  <br><br>
+  <br>
 <form class="form">
-  <label>{{setting "Comment_label"}}</label>
-  <textarea class="feedback"></textarea>
+  <label>Choose a type of feedback:
+    <select class="rating">
+      <option> - </option>
+      <option value="{{setting "Tag1"}}">
+        {{setting "Label1"}}
+      </option>
+      <option value="{{setting "Tag2"}}">
+        {{setting "Label2"}}
+      </option>
+    </select>
+  </label>
   <br><br>
-  <label>{{setting "Rating_label"}}</label>
-  <select class="rating">
-    <option> - </option>
-    <option value="good">
-      Good <i class="icon-thumbs-up"></i>
-    </option>
-    <option value="bad">
-      Bad <i class="icon-thumbs-down"></i>
-    </option>
-  </select>
+
+  <label>{{setting "Comment_label"}}
+    <textarea class="feedback"></textarea>
+  </label>
+  <br>
+
+  <label>{{setting "Rating_label"}}
+    <select class="rating">
+      <option> - </option>
+      <option value="good">
+        Good <i class="icon-thumbs-up"></i>
+      </option>
+      <option value="bad">
+        Bad <i class="icon-thumbs-down"></i>
+      </option>
+    </select>
+  </label>
   <button class="submit_form btn btn-primary pull-right">Submit</button>
 </form>
 </div>

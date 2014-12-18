@@ -18,11 +18,13 @@
     },
     {
       "name":"Comment_label",
-      "type":"multiline"
+      "type":"multiline",
+      "default":"Enter your feedback here, please:"
     },
     {
       "name":"Rating_label",
-      "type":"multiline"
+      "type":"multiline",
+      "default":"Rating:"
     },
     {
       "name":"Success_notice",
@@ -33,8 +35,24 @@
       "type":"text"
     },
     {
-      "name":"Tag",
-      "type":"text"
+      "name":"Label1",
+      "type":"text",
+      "required":true
+    },
+    {
+      "name":"Tag1",
+      "type":"text",
+      "required":true
+    },
+    {
+      "name":"Label2",
+      "type":"text",
+      "required":true
+    },
+    {
+      "name":"Tag2",
+      "type":"text",
+      "required":true
     },
     {
       "name":"Rating_tag_prefix",

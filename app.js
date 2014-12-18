@@ -36,7 +36,7 @@
           ratingTag = 'feedback_' + rating;
         }
       }
-        
+      var tag = this.$('.tag').val();
       var ticketRaw = {'ticket':{'subject':comment,'comment': { 'body': comment }, 'tags':[this.setting('Tag') || 'feedback', ratingTag]}};
       var ticketString = JSON.stringify(ticketRaw);
 
