@@ -3,8 +3,8 @@
   <br>
 <form class="form">
   <label>Choose a type of feedback:
-    <select class="tag">
-      <option> - </option>
+    <select class="tag" required>
+      <option disabled>-</option>
       <option value="{{setting "Tag1"}}">
         {{setting "Label1"}}
       </option>
