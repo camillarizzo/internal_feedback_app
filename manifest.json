@@ -1,58 +1,49 @@
 {
-  "name": "POC Feedback",
+  "name": "Send Feedback",
   "author": {
-    "name": "Joe McCarron",
-    "email": "joe@zendesk.com",
-    "url": "http://joem.cc"
+    "name": "Success Apps",
+    "email": "apps@successaps.zendesk.com"
   },
   "defaultLocale": "en",
   "private": true,
   "location": "ticket_sidebar",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "frameworkVersion": "1.0",
   "parameters": [
     {
       "name":"Instructions",
       "label":"Supports HTML",
-      "type":"multiline"
+      "type":"multiline",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
       "name":"Comment_label",
       "type":"multiline",
-      "default":"Enter your feedback here, please:"
-    },
-    {
-      "name":"Rating_label",
-      "type":"multiline",
-      "default":"Rating:"
-    },
-    {
-      "name":"Success_notice",
-      "type":"text"
-    },
-    {
-      "name":"Fail_notice",
-      "type":"text"
+      "default":"Enter your feedback here"
     },
     {
       "name":"Label1",
       "type":"text",
-      "required":true
+      "required":true,
+      "default":"Example option 1"
     },
     {
       "name":"Tag1",
       "type":"text",
-      "required":true
+      "required":true,
+      "default":"example_feedback_tag_1"
     },
     {
       "name":"Label2",
       "type":"text",
-      "required":true
+      "required":true,
+      "default":"Example option 2"
     },
     {
       "name":"Tag2",
       "type":"text",
-      "required":true
+      "required":true,
+      "default":"example_feedback_tag_2"
     },
     {
       "name":"Rating_tag_prefix",

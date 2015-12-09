@@ -1,2 +1,9 @@
-
-<section data-main/>
+<header>
+  <h3>
+    <a class="toggle-app"><i class="icon-minus"></i></a>
+    <span class="name" style="padding-left: 70px;">{{setting "name"}}</span>
+  </h3>
+</header>
+<div class="app-container">
+  <section data-main/>
+</div>
