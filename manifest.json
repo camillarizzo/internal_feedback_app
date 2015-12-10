@@ -2,10 +2,11 @@
   "name": "Send Feedback",
   "author": {
     "name": "Success Apps",
-    "email": "jeremiah@zendesk.com"
+    "email": "jeremiah@zendesk.com",
+    "url": ""
   },
   "defaultLocale": "en",
-  "private": true,
+  "private": false,
   "location": "ticket_sidebar",
   "version": "1.0.2",
   "frameworkVersion": "1.0",

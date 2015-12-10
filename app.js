@@ -56,7 +56,6 @@
         this.ajax('postTicket', ticket)
           .done( function(response) {
             services.notify('Your feedback has been submitted, thanks!', 'notice');
-            console.log('Created Ticket ID: {' + response.ticket.id + '} in this Zendesk account');
             this.switchTo('form');
           })
           .fail( function(response){
